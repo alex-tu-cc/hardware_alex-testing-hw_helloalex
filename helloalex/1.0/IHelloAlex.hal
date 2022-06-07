@@ -1,0 +1,8 @@
+package android.hardware.helloalex@1.0;
+
+interface IHelloAlex {
+    // HelloTest is user defined class, it is defined in types.hal
+    justTest(string name) generates (string result, HelloTest value);
+    justTest1(HelloTest name);
+};
+
