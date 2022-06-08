@@ -1,5 +1,7 @@
 // FIXME: your file license if you have one
 
+#define LOG_TAG "HelloAlexImpl"
+#include <log/log.h>
 #include "HelloAlex.h"
 
 namespace android {
