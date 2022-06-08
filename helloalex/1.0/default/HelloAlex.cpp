@@ -10,12 +10,15 @@ namespace implementation {
 
 // Methods from ::android::hardware::helloalex::V1_0::IHelloAlex follow.
 Return<void> HelloAlex::justTest(const hidl_string& name, justTest_cb _hidl_cb) {
-    // TODO implement
+    ALOGD("justTest, name = %s", name.c_str());
+    // mapping to IHelloAlex.hal: justTest(string name) generates (string result, HelloTest value);
+    // return the 2 values: string result, HelloTest value
+    _hidl_cb(name, HelloTest::V_TEST2);
     return Void();
 }
 
 Return<void> HelloAlex::justTest1(::android::hardware::helloalex::V1_0::HelloTest name) {
-    // TODO implement
+    ALOGD("justTest1, name = %hhu", name);
     return Void();
 }
 
